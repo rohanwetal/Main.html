@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Styling Example</title>
+    <style>
+        /* Style the labels */
+        label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* Style the data */
+        .data {
+            color: #333;
+        }
+
+        /* Style specific elements by ID */
+        #firstname {
+            font-size: 18px;
+        }
+
+        #lastname {
+            font-size: 18px;
+        }
+
+        #age {
+            font-size: 18px;
+        }
+
+        /* Style specific elements by class */
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Styling Example</h1>
+    <label for="firstname">Firstname:</label>
+    <span id="firstname" class="data">Eve</span><br><br>
+
+    <label for="lastname">Lastname:</label>
+    <span id="lastname" class="data">Jackson Doe</span><br><br>
+
+    <label for="age">Age:</label>
+    <span id="age" class="data">30</span><br><br>
+
+    <!-- Apply a class to highlight specific data -->
+    <label>Other Information:</label>
+    <span class="data highlight">Highlighted Data</span><br><br>
+</body>
+</html>

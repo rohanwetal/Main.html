@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        /* Style the form container */
+        .registration-form {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style the form labels */
+        label {
+            font-weight: bold;
+        }
+
+        /* Style the form inputs */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        /* Style the Gender radio buttons */
+        .gender-label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        /* Style the Language select */
+        select[name="language"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        /* Style the Register button */
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label>Gender:</label>
+        <label class="gender-label"><input type="radio" name="gender" value="male"> Male</label>
+        <label class="gender-label"><input type="radio" name="gender" value="female"> Female</label>
+        <label class="gender-label"><input type="radio" name="gender" value="other"> Other</label><br><br>
+
+        <label for="language">Language:</label>
+        <select name="language" id="language">
+            <option value="" selected>Select language</option>
+            <option value="english">English</option>
+            <option value="spanish">Spanish</option>
+            <option value="french">French</option>
+            <!-- Add more language options as needed -->
+        </select><br><br>
+
+        <label for="zipcode">Zip Code:</label>
+        <input type="text" id="zipcode" name="zipcode"><br><br>
+
+        <label for="about">About:</label>
+        <textarea id="about" name="about" rows="4"></textarea><br><br>
+
+        <input type="submit" value="Register">
+    </div>
+</body>
+</html>

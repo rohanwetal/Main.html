@@ -1,0 +1,57 @@
+No<!DOCTYPE html>
+<html>
+<head>
+    <title>Company List</title>
+    <style>
+        /* Style the main container */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style the individual rows */
+        .row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        /* Style the columns */
+        .column {
+            flex-basis: 30%;
+        }
+
+        /* Style the headers */
+        .header {
+            font-weight: bold;
+        }
+
+        /* Style the data */
+        .data {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row header">
+            <div class="column">Company</div>
+            <div class="column">Contact</div>
+            <div class="column">Country</div>
+        </div>
+        <div class="row">
+            <div class="column data">Alfreds Futterkiste</div>
+            <div class="column data">Maria Anders</div>
+            <div class="column data">Germany</div>
+        </div>
+        <div class="row">
+            <div class="column data">Berglunds snabbkop</div>
+            <div class="column data">Christina Berglund</div>
+            <div class="column data">Sweden</div>
+        </div>
+        <!-- Repeat the rows for other companies -->
+    </div>
+</body>
+</html>

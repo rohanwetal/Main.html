@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required><br><br>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="re_password">Re-enter Password:</label>
+        <input type="password" id="re_password" name="re_password" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="phone_number">Phone Number:</label>
+        <input type="tel" id="phone_number" name="phone_number"><br><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea><br><br>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state"><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="">Choose your country</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <!-- Add more countries as needed -->
+        </select><br><br>
+        <label for="languages_known">Languages known:</label>
+        <input type="checkbox" id="english" name="languages_known" value="English">
+        <label for="english">English</label>
+        <input type="checkbox" id="kannada" name="languages_known" value="Kannada">
+        <label for="kannada">Kannada</label>
+        <input type="checkbox" id="hindi" name="languages_known" value="Hindi">
+        <label for="hindi">Hindi</label>
+        <input type="checkbox" id="telugu" name="languages_known" value="Telugu">
+        <label for="telugu">Telugu</label><br><br>
+
+        <input type="checkbox" id="declare" name="declare" required>
+        <label for="declare">Hereby I declare all the given details are true</label><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+    <p>Already have an account? <a href="#">Log in to Ethanus website</a></p>
+</body>
+</html> 
